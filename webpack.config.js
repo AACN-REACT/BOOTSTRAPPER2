@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 
+
+                mode: "development",
                 entry: './src',
                 output: {
                         path: __dirname+"/dist",
@@ -15,7 +17,10 @@ module.exports = {
                         use:{ loader:'babel-loader'}
                     }
                     ]
-                }
+                },
+                plugins: [
+                    new HtmlWebpackPlugin()
+                ]
 
 
 
