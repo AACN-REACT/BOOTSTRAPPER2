@@ -2,14 +2,15 @@ import React,{useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import Box from './components/box.jsx';
 import '../sass/main.scss';
-import '../sass/some.css'
+import '../sass/some.css';
+import landscape from '../images/landscape.jpg';
 
+console.log(landscape)
 
 function App(props){
 
-
     return (
-        <div>
+        <div style={{border:"2px solid red", backgroundImage: `url(${landscape})`}}>
             
         <h1>This is My React App</h1>
         <Box msg="goodbye" />
